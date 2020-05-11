@@ -1,0 +1,27 @@
+
+<app-header></app-header>
+<div class="container"> 
+    <app-nav-links></app-nav-links>
+    <p class="statText">User Statistics</p>
+    <kendo-grid (cellClick)="onCellClicked($event)" [data]="products" [height]="410"
+    [pageSize]="pageSize" [skip]="skip" [pageable]="true" (pageChange)="pageChange($event)">
+        <kendo-grid-column field="userId" title="Id" width="100">
+        </kendo-grid-column>
+        <kendo-grid-column field="firstName" title="First name" width="200">
+        </kendo-grid-column>
+        <kendo-grid-column field="lastName" title="Last name" width="200">
+        </kendo-grid-column>
+        <kendo-grid-column field="email" title="Email" width="200">
+        </kendo-grid-column>
+        <kendo-grid-column field="gender" title="Gender" width="200">
+        </kendo-grid-column>
+        <kendo-grid-column field="ipAddress" title="IP Address" width="200">
+        </kendo-grid-column>
+        <kendo-grid-column field="totalClicks" title="Total Clicks" width="80">
+        </kendo-grid-column>
+        <kendo-grid-column field="totalPageViews" title="Total page views" width="80">
+        </kendo-grid-column>
+    </kendo-grid>
+
+<app-footer></app-footer>
+</div>

@@ -1,0 +1,72 @@
+@import "../../assets/variables.scss";
+
+.container {
+    position: absolute;
+    width: 400px;
+    height: 570px;
+    left: 949.41px;
+    top: 20.08px;
+    border:0;
+    background: url('../../assets/mobile.png');
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-family: $font-family;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 100px;
+}
+
+ .centerText {
+    height: 78px;
+    left: 430px;
+    top: 671px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    color: $black_00;
+ }
+
+ .centerText2 {
+    text-align: center;
+    width: 780px;
+    height: 56px;
+    left: 330px;
+    top: 773px;
+    
+    font-size: 20px;
+    line-height: 142%;
+    
+    color: $gray_00;
+ }
+
+ .example-card {
+     margin-top: 200px;
+    max-width: 400px;
+  }
+  
+  .im {
+    background: url('../../assets/Group13.png');
+    background-size: cover;
+  }
+
+  .card-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+
+  .cardTitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #1A1A1A;
+  }

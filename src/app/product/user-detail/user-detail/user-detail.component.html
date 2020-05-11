@@ -1,0 +1,30 @@
+<app-header></app-header>
+<div class="content">
+  <app-nav-links></app-nav-links>
+<div class="chartTitle">Clicks</div>
+<kendo-chart>
+    <kendo-chart-category-axis>
+        <kendo-chart-category-axis-item
+            [categories]="['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']">
+        </kendo-chart-category-axis-item>
+    </kendo-chart-category-axis>
+    <kendo-chart-series>
+      <kendo-chart-series-item type="line" color="#3A80BA" [data]="[123, 276, 310, 212, 240, 156, 98]">
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+
+  <div class="chartTitle">Vievs</div>
+  <kendo-chart>
+    <kendo-chart-category-axis>
+        <kendo-chart-category-axis-item
+            [categories]="['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']">
+        </kendo-chart-category-axis-item>
+    </kendo-chart-category-axis>
+    <kendo-chart-series>
+      <kendo-chart-series-item type="line" color="#3A80BA" [data]="[123, 276, 310, 212, 240, 156, 98]">
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+</div>
+  <app-footer></app-footer>

@@ -1,0 +1,20 @@
+@import "../../../assets/variables.scss";
+
+.chartTitle {
+    width: 221px;
+    height: 39px;
+    left: 130px;
+    top: 132px;
+
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    color: $black_00;
+}
+
+.content {
+    max-width: 1390px;
+}
