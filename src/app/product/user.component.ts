@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../web-api/user.service';
+import { PageChangeEvent, GridDataResult } from '@progress/kendo-angular-grid';
 
 @Component({
   selector: 'app-product',
@@ -22,5 +23,9 @@ export class UserComponent implements OnInit {
 
   public onCellClicked({ dataItem }): void {
     this._router.navigate([`user-detail/${dataItem.userId}`]);
+  }
+
+  public pageChange(event: PageChangeEvent): void {
+    this.skip = event.skip;
   }
 }
