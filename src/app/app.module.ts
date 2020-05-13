@@ -17,6 +17,7 @@ import 'hammerjs';
 import { UserDetailComponent } from './product/user-detail/user-detail/user-detail.component';
 import { NavLinksComponent } from './nav/nav-links/nav-links/nav-links.component';
 import { HomePageComponent } from './homePage/home-page/home-page.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HomePageComponent } from './homePage/home-page/home-page.component';
     HeaderComponent,
     UserDetailComponent,
     NavLinksComponent,
-    HomePageComponent
+    HomePageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
